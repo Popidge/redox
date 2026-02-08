@@ -1,0 +1,5 @@
+pub fn vec_push_016() -> Vec<i32> {
+    let mut v = Vec::new();
+    v.push(48);
+    v
+}

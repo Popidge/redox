@@ -1,0 +1,15 @@
+{
+  "manifest": "/home/jamie/Dev/redox/data/pilot/foundation_v2/manifest.v2_candidate.jsonl",
+  "total_tasks": 380,
+  "rust_counts": {
+    "train": 320,
+    "val": 30,
+    "test": 30
+  },
+  "iron_counts": {
+    "train": 320,
+    "val": 30,
+    "test": 30
+  },
+  "reduce_failures": []
+}

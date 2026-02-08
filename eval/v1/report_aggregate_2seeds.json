@@ -1,0 +1,116 @@
+{
+  "num_reports": 2,
+  "summary": {
+    "rust": {
+      "compile_at_1": {
+        "mean": 0.45,
+        "std": 0.016666666666666663
+      },
+      "test_at_1": {
+        "mean": 0.06666666666666667,
+        "std": 0.0
+      },
+      "transform_rate": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "iron": {
+      "compile_at_1": {
+        "mean": 0.3333333333333333,
+        "std": 0.0
+      },
+      "test_at_1": {
+        "mean": 0.3333333333333333,
+        "std": 0.0
+      },
+      "transform_rate": {
+        "mean": 0.6666666666666666,
+        "std": 0.033333333333333326
+      }
+    }
+  },
+  "per_family": {
+    "rust": {
+      "closure_shift_const": {
+        "compile": {
+          "mean": 0.2,
+          "std": 0.0
+        },
+        "test": {
+          "mean": 0.2,
+          "std": 0.0
+        }
+      },
+      "result_unwrap_or_const": {
+        "compile": {
+          "mean": 0.15000000000000002,
+          "std": 0.05
+        },
+        "test": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "vec_pop_basic": {
+        "compile": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "test": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      }
+    },
+    "iron": {
+      "closure_shift_const": {
+        "compile": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "test": {
+          "mean": 1.0,
+          "std": 0.0
+        }
+      },
+      "result_unwrap_or_const": {
+        "compile": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "test": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "vec_pop_basic": {
+        "compile": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "test": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      }
+    }
+  },
+  "error_taxonomy": {
+    "rust": {
+      "other": 20,
+      "wrong_signature_or_call": 19,
+      "type_mismatch": 17
+    },
+    "iron": {
+      "iron_parse_or_oxidize": 20,
+      "type_mismatch": 17,
+      "other": 2,
+      "name_resolution": 1
+    }
+  },
+  "delta_iron_minus_rust": {
+    "compile_at_1_mean": -0.1166666666666667,
+    "test_at_1_mean": 0.26666666666666666
+  }
+}

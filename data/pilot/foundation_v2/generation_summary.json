@@ -1,0 +1,10 @@
+{
+  "base_source": "data/pilot/foundation_v1",
+  "total_tasks": 380,
+  "added_tasks": 160,
+  "families_added": [
+    "result_unwrap_or_train",
+    "vec_pop_train",
+    "option_unwrap_or_train"
+  ]
+}

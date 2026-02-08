@@ -1,0 +1,14 @@
+/target
+
+# Large local training artifacts
+/training/
+
+# Python caches
+**/__pycache__/
+*.pyc
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local tool caches
+.ruff_cache/

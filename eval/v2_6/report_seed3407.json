@@ -1,0 +1,754 @@
+{
+  "inputs": {
+    "rust": "eval/v2_6/predictions_rust_seed3407.jsonl",
+    "iron": "eval/v2_6/predictions_iron_seed3407.jsonl"
+  },
+  "rust": {
+    "arm": "rust",
+    "total": 30,
+    "transform_pass": 30,
+    "compile_pass": 26,
+    "test_pass": 26,
+    "compile_at_1": 0.8666666666666667,
+    "test_at_1": 0.8666666666666667,
+    "per_family": {
+      "closure_shift_const": {
+        "total": 10,
+        "compile": 6,
+        "test": 6
+      },
+      "result_unwrap_or_const": {
+        "total": 10,
+        "compile": 10,
+        "test": 10
+      },
+      "vec_pop_basic": {
+        "total": 10,
+        "compile": 10,
+        "test": 10
+      }
+    },
+    "failure_phase_counts": {
+      "compile": 4
+    },
+    "failure_taxonomy": {
+      "type_mismatch": 4
+    },
+    "per_family_failure_phase_counts": {
+      "closure_shift_const": {
+        "compile": 4
+      }
+    },
+    "per_family_failure_taxonomy": {
+      "closure_shift_const": {
+        "type_mismatch": 4
+      }
+    },
+    "rows": [
+      {
+        "id": "closure_shift_001",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_002",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_003",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_b_m8qjw4/pred.rs:2:5 | 1 | pub fn closure_shift_003(x: i32) -> i32 { | --- expected `i32` because of return type 2 | |n| n + 5 | ^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closure `{closure@/tmp/redox_eval_co...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_004",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_005",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_3wtp3u6t/pred.rs:2:5 | 1 | pub fn closure_shift_005(x: i32) -> i32 { | --- expected `i32` because of return type 2 | |n| n + 7 | ^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closure `{closure@/tmp/redox_eval_co...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_006",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_007",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_008",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_009",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_weya6acu/pred.rs:2:5 | 1 | pub fn closure_shift_009(x: i32) -> i32 { | --- expected `i32` because of return type 2 | || x + 11 | ^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closure `{closure@/tmp/redox_eval_co...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_010",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_pluv3uqg/pred.rs:2:5 | 1 | pub fn closure_shift_010(x: i32) -> i32 { | --- expected `i32` because of return type 2 | |n| n + 12 | ^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closure `{closure@/tmp/redox_eval_...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_001",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_002",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_003",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_004",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_005",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_006",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_007",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_008",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_009",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_010",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_001",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_002",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_003",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_004",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_005",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_006",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_007",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_008",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_009",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_010",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      }
+    ]
+  },
+  "iron": {
+    "arm": "iron",
+    "total": 30,
+    "transform_pass": 29,
+    "compile_pass": 29,
+    "test_pass": 29,
+    "compile_at_1": 0.9666666666666667,
+    "test_at_1": 0.9666666666666667,
+    "per_family": {
+      "closure_shift_const": {
+        "total": 10,
+        "compile": 9,
+        "test": 9
+      },
+      "result_unwrap_or_const": {
+        "total": 10,
+        "compile": 10,
+        "test": 10
+      },
+      "vec_pop_basic": {
+        "total": 10,
+        "compile": 10,
+        "test": 10
+      }
+    },
+    "failure_phase_counts": {
+      "transform": 1
+    },
+    "failure_taxonomy": {
+      "iron_parse_error": 1
+    },
+    "per_family_failure_phase_counts": {
+      "closure_shift_const": {
+        "transform": 1
+      }
+    },
+    "per_family_failure_taxonomy": {
+      "closure_shift_const": {
+        "iron_parse_error": 1
+      }
+    },
+    "rows": [
+      {
+        "id": "closure_shift_001",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_002",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_003",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_004",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_005",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_006",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_007",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_008",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Closure, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_009",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_010",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_001",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_002",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_003",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_004",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_005",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_006",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_007",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_008",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_009",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_010",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_001",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_002",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_003",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_004",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_005",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_006",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_007",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_008",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_009",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_010",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      }
+    ]
+  }
+}

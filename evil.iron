@@ -1,0 +1,7 @@
+function evil with lifetime a with generic type T implementing Iterator with generic type U implementing Default
+    takes x of T
+    returns unknown_type
+begin
+    closure
+end function
+

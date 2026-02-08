@@ -1,0 +1,65 @@
+function compare_greater
+    takes x of i32 and y of i32
+    returns boolean
+begin
+    x greater than y
+end function
+
+function generic_bound with generic type T implementing Default
+    returns T
+begin
+    call associated method default on T
+end function
+
+function greater_than
+    takes a of i32 and b of i32
+    returns boolean
+begin
+    a greater than b
+end function
+
+function tail_expr
+    returns optional i32
+begin
+    some of 42
+end function
+
+function return_stmt
+    returns optional i32
+begin
+    return some of 42
+end function
+
+function complex_types
+    takes x of mutable reference to slice of i32
+    returns optional reference to i32
+begin
+    call method first on x
+end function
+
+function simple_loop
+    takes n of i32
+    returns i32
+begin
+    define mutable sum as 0
+    define mutable i as 0
+    while i less than n repeat
+    begin
+        set sum equal to sum plus i
+        set i equal to i plus 1
+    end while
+    sum
+end function
+
+function for_loop
+    takes items of reference to slice of i32
+    returns i32
+begin
+    define mutable sum as 0
+    for each item in items repeat
+    begin
+        set sum equal to sum plus item
+    end for
+    sum
+end function
+

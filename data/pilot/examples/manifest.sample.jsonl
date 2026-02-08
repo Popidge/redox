@@ -1,0 +1,2 @@
+{"id":"add_train","split":"train","family":"arithmetic_basics","prompt_path":"task_add_prompt.md","rust_path":"task_add.rs","tests_path":"task_add_tests.rs","deps":[],"unsafe":false}
+{"id":"option_val","split":"val","family":"option_basics","prompt_path":"task_option_prompt.md","rust_path":"task_option.rs","tests_path":"task_option_tests.rs","deps":[],"unsafe":false}

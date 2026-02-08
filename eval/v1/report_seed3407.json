@@ -1,0 +1,722 @@
+{
+  "inputs": {
+    "rust": "eval/predictions_rust_seed3407.jsonl",
+    "iron": "eval/predictions_iron_seed3407.jsonl"
+  },
+  "rust": {
+    "arm": "rust",
+    "total": 30,
+    "transform_pass": 30,
+    "compile_pass": 14,
+    "test_pass": 2,
+    "compile_at_1": 0.4666666666666667,
+    "test_at_1": 0.06666666666666667,
+    "per_family": {
+      "closure_shift_const": {
+        "total": 10,
+        "compile": 2,
+        "test": 2
+      },
+      "result_unwrap_or_const": {
+        "total": 10,
+        "compile": 2,
+        "test": 0
+      },
+      "vec_pop_basic": {
+        "total": 10,
+        "compile": 10,
+        "test": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "closure_shift_001",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_llelkmcz/pred.rs:3:5 | 1 | pub fn add_const_003(x: i32) -> i32 { | --- expected `i32` because of return type 2 | let n = 3; 3 | move |a: i32| a + n | ^^^^^^^^^^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closu...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_002",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_z6pr_4ao/pred.rs:3:5 | 1 | pub fn add_const_004(x: i32) -> i32 { | --- expected `i32` because of return type 2 | let n = 4; 3 | move |a: i32| a + n | ^^^^^^^^^^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closu...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_003",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_004",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_005",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_37jtb1ef/pred.rs:3:5 | 1 | pub fn add_const_007(x: i32) -> i32 { | --- expected `i32` because of return type 2 | let n = 7; 3 | move |a: i32| a + n | ^^^^^^^^^^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closu...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_006",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile__bn30dd6/pred.rs:3:5 | 1 | pub fn add_const_008(x: i32) -> i32 { | --- expected `i32` because of return type 2 | let n = 8; 3 | move |a: i32| a + n | ^^^^^^^^^^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closu...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_007",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_622pbdb6/pred.rs:3:5 | 1 | pub fn add_const_009(x: i32) -> i32 { | --- expected `i32` because of return type 2 | let n = 9; 3 | move |a: i32| a + n | ^^^^^^^^^^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found closu...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_008",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_ksx5ehgw/pred.rs:3:5 | 1 | pub fn add_const_010(x: i32) -> i32 { | --- expected `i32` because of return type 2 | let inc = 10; 3 | move |n: i32| n + inc | ^^^^^^^^^^^^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` foun...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_009",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_g3gt0adp/pred.rs:3:5 | 1 | pub fn add_const_011(x: i32) -> i32 { | --- expected `i32` because of return type 2 | let n = 11; 3 | move |a: i32| a + n | ^^^^^^^^^^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found clos...",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_010",
+        "family": "closure_shift_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_w5hymf29/pred.rs:3:5 | 1 | pub fn add_const_012(x: i32) -> i32 { | --- expected `i32` because of return type 2 | let n = 12; 3 | move |a: i32| a + n | ^^^^^^^^^^^^^^^^^^^ expected `i32`, found closure | = note: expected type `i32` found clos...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_001",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0061]: this function takes 2 arguments but 1 argument was supplied --> /tmp/redox_eval_compile_u46wvia3/pred.rs:2:11 | 2 | match Result::unwrap_or(0) { | ^^^^^^^^^^^^^^^^^ - argument #1 of type `Result<_, _>` is missing | note: method defined here --> /home/jamie/.rustup/toolchains/stable-x86...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_002",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0061]: this function takes 2 arguments but 1 argument was supplied --> /tmp/redox_eval_compile_odnllvzm/pred.rs:2:11 | 2 | match Result::unwrap_or_else(|| 2) { | ^^^^^^^^^^^^^^^^^^^^^^ ---- argument #1 of type `Result<_, _>` is missing | note: method defined here --> /home/jamie/.rustup/toolc...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_003",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0061]: this function takes 2 arguments but 1 argument was supplied --> /tmp/redox_eval_compile_vgdfcacn/pred.rs:2:11 | 2 | match Result::unwrap_or(0) { | ^^^^^^^^^^^^^^^^^ - argument #1 of type `Result<_, _>` is missing | note: method defined here --> /home/jamie/.rustup/toolchains/stable-x86...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_004",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0061]: this function takes 2 arguments but 1 argument was supplied --> /tmp/redox_eval_compile_bxc9qy2f/pred.rs:2:11 | 2 | match Result::unwrap_or_else(|| 4) { | ^^^^^^^^^^^^^^^^^^^^^^ ---- argument #1 of type `Result<_, _>` is missing | note: method defined here --> /home/jamie/.rustup/toolc...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_005",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0061]: this function takes 0 arguments but 1 argument was supplied --> /tmp/redox_eval_behavior_56ey32fx/behavior.rs:10:14 | 10 | let ok = result_unwrap_or_005(Ok(123)); | ^^^^^^^^^^^^^^^^^^^^ ------- unexpected argument of type `Result<{integer}, _>` | note: function defined here --> /tmp/re..."
+      },
+      {
+        "id": "result_unwrap_or_006",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0061]: this function takes 2 arguments but 1 argument was supplied --> /tmp/redox_eval_compile_ysthx3iu/pred.rs:2:11 | 2 | match Result::unwrap_or(0) { | ^^^^^^^^^^^^^^^^^ - argument #1 of type `Result<_, _>` is missing | note: method defined here --> /home/jamie/.rustup/toolchains/stable-x86...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_007",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0061]: this function takes 0 arguments but 1 argument was supplied --> /tmp/redox_eval_behavior_y23iswmd/behavior.rs:10:14 | 10 | let ok = result_unwrap_or_007(Ok(123)); | ^^^^^^^^^^^^^^^^^^^^ ------- unexpected argument of type `Result<{integer}, _>` | note: function defined here --> /tmp/re..."
+      },
+      {
+        "id": "result_unwrap_or_008",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0061]: this function takes 2 arguments but 1 argument was supplied --> /tmp/redox_eval_compile_ctpep1h3/pred.rs:2:11 | 2 | match Result::unwrap_or(008) { | ^^^^^^^^^^^^^^^^^ --- argument #1 of type `Result<_, _>` is missing | note: method defined here --> /home/jamie/.rustup/toolchains/stable...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_009",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0061]: this function takes 2 arguments but 1 argument was supplied --> /tmp/redox_eval_compile_1_3z4ig4/pred.rs:2:11 | 2 | match Result::unwrap_or(0) { | ^^^^^^^^^^^^^^^^^ - argument #1 of type `Result<_, _>` is missing | note: method defined here --> /home/jamie/.rustup/toolchains/stable-x86...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_010",
+        "family": "result_unwrap_or_const",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_6zz4rsu7/pred.rs:3:20 | 1 | pub fn result_unwrap_or_004() -> i32 { | --- expected `i32` because of return type 2 | match Some(0) { 3 | Some(0) => Some(0), | ^^^^^^^ expected `i32`, found `Option<{integer}>` | = note: expected type `i32` foun...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_001",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_vyqbjsx2/behavior.rs:9:5 | 9 | assert_eq!(got, Some(3)); | ^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implemented..."
+      },
+      {
+        "id": "vec_pop_002",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_x29vpqp6/behavior.rs:9:5 | 9 | assert_eq!(got, Some(4)); | ^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implemented..."
+      },
+      {
+        "id": "vec_pop_003",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_55ro4s83/behavior.rs:9:5 | 9 | assert_eq!(got, Some(5)); | ^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implemented..."
+      },
+      {
+        "id": "vec_pop_004",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_wgqihmld/behavior.rs:9:5 | 9 | assert_eq!(got, Some(6)); | ^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implemented..."
+      },
+      {
+        "id": "vec_pop_005",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_wt_5i38a/behavior.rs:9:5 | 9 | assert_eq!(got, Some(7)); | ^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implemented..."
+      },
+      {
+        "id": "vec_pop_006",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_0jj_se_d/behavior.rs:9:5 | 9 | assert_eq!(got, Some(8)); | ^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implemented..."
+      },
+      {
+        "id": "vec_pop_007",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_h5z5x790/behavior.rs:9:5 | 9 | assert_eq!(got, Some(9)); | ^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implemented..."
+      },
+      {
+        "id": "vec_pop_008",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_pqonuxh7/behavior.rs:9:5 | 9 | assert_eq!(got, Some(10)); | ^^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implement..."
+      },
+      {
+        "id": "vec_pop_009",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_5tq3r7ap/behavior.rs:9:5 | 9 | assert_eq!(got, Some(11)); | ^^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implement..."
+      },
+      {
+        "id": "vec_pop_010",
+        "family": "vec_pop_basic",
+        "arm": "rust",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": "error[E0277]: can't compare `Vec<i32>` with `Option<{integer}>` --> /tmp/redox_eval_behavior_z_s_qx00/behavior.rs:9:5 | 9 | assert_eq!(got, Some(12)); | ^^^^^^^^^^^^^^^^^^^^^^^^^ no implementation for `Vec<i32> == Option<{integer}>` | = help: the trait `PartialEq<Option<{integer}>>` is not implement..."
+      }
+    ]
+  },
+  "iron": {
+    "arm": "iron",
+    "total": 30,
+    "transform_pass": 21,
+    "compile_pass": 10,
+    "test_pass": 10,
+    "compile_at_1": 0.3333333333333333,
+    "test_at_1": 0.3333333333333333,
+    "per_family": {
+      "closure_shift_const": {
+        "total": 10,
+        "compile": 10,
+        "test": 10
+      },
+      "result_unwrap_or_const": {
+        "total": 10,
+        "compile": 0,
+        "test": 0
+      },
+      "vec_pop_basic": {
+        "total": 10,
+        "compile": 0,
+        "test": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "closure_shift_001",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_002",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_003",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_004",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_005",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_006",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_007",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_008",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_009",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "closure_shift_010",
+        "family": "closure_shift_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": true,
+        "test_ok": true,
+        "transform_error": "",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_001",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Ok, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_002",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `input` --> /tmp/redox_eval_compile__heoamep/pred.rs:2:5 | 2 | input::unwrap_or(2) | ^^^^^ use of unresolved module or unlinked crate `input` | = help: you might be missing a crate named `input` error: aborting due to 1 prev...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_003",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `input` --> /tmp/redox_eval_compile_htgvqg7y/pred.rs:2:5 | 2 | input::unwrap_or(3) | ^^^^^ use of unresolved module or unlinked crate `input` | = help: you might be missing a crate named `input` error: aborting due to 1 prev...",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_004",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Ok, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_005",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Ok, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_006",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Ok, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_007",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Ok, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_008",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Ok, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_009",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Ok, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "result_unwrap_or_010",
+        "family": "result_unwrap_or_const",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Ok, \"identifier\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_001",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0425]: cannot find value `no` in this scope --> /tmp/redox_eval_compile_7o8b04hp/pred.rs:2:14 | 2 | Vec::pop(no); | ^^ not found in this scope error[E0425]: cannot find value `arguments` in this scope --> /tmp/redox_eval_compile_7o8b04hp/pred.rs:3:5 | 3 | arguments | ^^^^^^^^^ not found in th...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_002",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_3f511gi2/pred.rs:2:14 | 2 | Vec::pop(0) | -------- ^ expected `&mut Vec<i32, _>`, found integer | | | arguments to this function are incorrect | = note: expected mutable reference `&mut Vec<i32, _>` found type `{integer}` note: method define...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_003",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": false,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "Error: Oxidation failed: Parse error: UnexpectedToken(Comma, \"expression\")",
+        "compile_error": "",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_004",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_w5iyrrhs/pred.rs:2:14 | 2 | Vec::pop(0) | -------- ^ expected `&mut Vec<i32, _>`, found integer | | | arguments to this function are incorrect | = note: expected mutable reference `&mut Vec<i32, _>` found type `{integer}` note: method define...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_005",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_ep3hp3k5/pred.rs:2:14 | 2 | Vec::pop(0) | -------- ^ expected `&mut Vec<i32, _>`, found integer | | | arguments to this function are incorrect | = note: expected mutable reference `&mut Vec<i32, _>` found type `{integer}` note: method define...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_006",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_a6huwaur/pred.rs:2:14 | 2 | Vec::pop(0) | -------- ^ expected `&mut Vec<i32, _>`, found integer | | | arguments to this function are incorrect | = note: expected mutable reference `&mut Vec<i32, _>` found type `{integer}` note: method define...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_007",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_ber6wq0q/pred.rs:2:14 | 2 | Vec::pop(0) | -------- ^ expected `&mut Vec<i32, _>`, found integer | | | arguments to this function are incorrect | = note: expected mutable reference `&mut Vec<i32, _>` found type `{integer}` note: method define...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_008",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_4nyc2id1/pred.rs:2:14 | 2 | Vec::pop(0) | -------- ^ expected `&mut Vec<i32, _>`, found integer | | | arguments to this function are incorrect | = note: expected mutable reference `&mut Vec<i32, _>` found type `{integer}` note: method define...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_009",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_734qzfau/pred.rs:2:14 | 2 | Vec::pop(004) | -------- ^^^ expected `&mut Vec<i32, _>`, found integer | | | arguments to this function are incorrect | = note: expected mutable reference `&mut Vec<i32, _>` found type `{integer}` note: method de...",
+        "test_error": ""
+      },
+      {
+        "id": "vec_pop_010",
+        "family": "vec_pop_basic",
+        "arm": "iron",
+        "transform_ok": true,
+        "compile_ok": false,
+        "test_ok": false,
+        "transform_error": "",
+        "compile_error": "error[E0308]: mismatched types --> /tmp/redox_eval_compile_u3hpai6n/pred.rs:2:14 | 2 | Vec::pop(004) | -------- ^^^ expected `&mut Vec<i32, _>`, found integer | | | arguments to this function are incorrect | = note: expected mutable reference `&mut Vec<i32, _>` found type `{integer}` note: method de...",
+        "test_error": ""
+      }
+    ]
+  }
+}
