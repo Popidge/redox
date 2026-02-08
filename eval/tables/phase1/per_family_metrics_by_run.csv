@@ -1,0 +1,37 @@
+run_key,run_label,report_path,arm,family,compile_mean,compile_std,test_mean,test_std
+v1_agg,v1 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v1/report_aggregate_2seeds.json,rust,closure_shift_const,0.2,0.0,0.2,0.0
+v1_agg,v1 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v1/report_aggregate_2seeds.json,rust,result_unwrap_or_const,0.15,0.05,0.0,0.0
+v1_agg,v1 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v1/report_aggregate_2seeds.json,rust,vec_pop_basic,1.0,0.0,0.0,0.0
+v1_agg,v1 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v1/report_aggregate_2seeds.json,iron,closure_shift_const,1.0,0.0,1.0,0.0
+v1_agg,v1 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v1/report_aggregate_2seeds.json,iron,result_unwrap_or_const,0.0,0.0,0.0,0.0
+v1_agg,v1 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v1/report_aggregate_2seeds.json,iron,vec_pop_basic,0.0,0.0,0.0,0.0
+v2_seed2108,v2 seed2108,/home/jamie/Dev/redox/eval/v2/report_seed2108.json,rust,closure_shift_const,0.0,0.0,0.0,0.0
+v2_seed2108,v2 seed2108,/home/jamie/Dev/redox/eval/v2/report_seed2108.json,rust,result_unwrap_or_const,0.2,0.0,0.2,0.0
+v2_seed2108,v2 seed2108,/home/jamie/Dev/redox/eval/v2/report_seed2108.json,rust,vec_pop_basic,1.0,0.0,0.0,0.0
+v2_seed2108,v2 seed2108,/home/jamie/Dev/redox/eval/v2/report_seed2108.json,iron,closure_shift_const,1.0,0.0,1.0,0.0
+v2_seed2108,v2 seed2108,/home/jamie/Dev/redox/eval/v2/report_seed2108.json,iron,result_unwrap_or_const,0.8,0.0,0.8,0.0
+v2_seed2108,v2 seed2108,/home/jamie/Dev/redox/eval/v2/report_seed2108.json,iron,vec_pop_basic,0.0,0.0,0.0,0.0
+v2_5_agg,v2.5 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds.json,rust,closure_shift_const,0.15,0.15,0.15,0.15
+v2_5_agg,v2.5 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds.json,rust,result_unwrap_or_const,1.0,0.0,1.0,0.0
+v2_5_agg,v2.5 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds.json,rust,vec_pop_basic,1.0,0.0,1.0,0.0
+v2_5_agg,v2.5 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds.json,iron,closure_shift_const,0.0,0.0,0.0,0.0
+v2_5_agg,v2.5 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds.json,iron,result_unwrap_or_const,1.0,0.0,1.0,0.0
+v2_5_agg,v2.5 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds.json,iron,vec_pop_basic,1.0,0.0,1.0,0.0
+v2_5_after_parser_fix_agg,v2.5 after parser fix (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds_after_parser_fix.json,rust,closure_shift_const,0.15,0.15,0.15,0.15
+v2_5_after_parser_fix_agg,v2.5 after parser fix (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds_after_parser_fix.json,rust,result_unwrap_or_const,1.0,0.0,1.0,0.0
+v2_5_after_parser_fix_agg,v2.5 after parser fix (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds_after_parser_fix.json,rust,vec_pop_basic,1.0,0.0,1.0,0.0
+v2_5_after_parser_fix_agg,v2.5 after parser fix (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds_after_parser_fix.json,iron,closure_shift_const,1.0,0.0,1.0,0.0
+v2_5_after_parser_fix_agg,v2.5 after parser fix (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds_after_parser_fix.json,iron,result_unwrap_or_const,1.0,0.0,1.0,0.0
+v2_5_after_parser_fix_agg,v2.5 after parser fix (2 seeds),/home/jamie/Dev/redox/eval/v2_5/report_aggregate_2seeds_after_parser_fix.json,iron,vec_pop_basic,1.0,0.0,1.0,0.0
+v2_6_agg,v2.6 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds.json,rust,closure_shift_const,0.75,0.15,0.75,0.15
+v2_6_agg,v2.6 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds.json,rust,result_unwrap_or_const,1.0,0.0,1.0,0.0
+v2_6_agg,v2.6 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds.json,rust,vec_pop_basic,1.0,0.0,1.0,0.0
+v2_6_agg,v2.6 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds.json,iron,closure_shift_const,0.9,0.0,0.9,0.0
+v2_6_agg,v2.6 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds.json,iron,result_unwrap_or_const,1.0,0.0,1.0,0.0
+v2_6_agg,v2.6 aggregate (2 seeds),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds.json,iron,vec_pop_basic,1.0,0.0,1.0,0.0
+v2_6_iron_prompt_fix_only_agg,v2.6 strict attribution (old Rust + new Iron),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds_iron_prompt_fix_only.json,rust,closure_shift_const,0.15,0.15,0.15,0.15
+v2_6_iron_prompt_fix_only_agg,v2.6 strict attribution (old Rust + new Iron),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds_iron_prompt_fix_only.json,rust,result_unwrap_or_const,1.0,0.0,1.0,0.0
+v2_6_iron_prompt_fix_only_agg,v2.6 strict attribution (old Rust + new Iron),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds_iron_prompt_fix_only.json,rust,vec_pop_basic,1.0,0.0,1.0,0.0
+v2_6_iron_prompt_fix_only_agg,v2.6 strict attribution (old Rust + new Iron),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds_iron_prompt_fix_only.json,iron,closure_shift_const,0.9,0.0,0.9,0.0
+v2_6_iron_prompt_fix_only_agg,v2.6 strict attribution (old Rust + new Iron),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds_iron_prompt_fix_only.json,iron,result_unwrap_or_const,1.0,0.0,1.0,0.0
+v2_6_iron_prompt_fix_only_agg,v2.6 strict attribution (old Rust + new Iron),/home/jamie/Dev/redox/eval/v2_6/report_aggregate_2seeds_iron_prompt_fix_only.json,iron,vec_pop_basic,1.0,0.0,1.0,0.0

@@ -1,0 +1,3 @@
+dataset_version,manifest_path,total_tasks,family_count,train_count,val_count,test_count,gate_all_pass,added_tasks,families_added,export_rust_train,export_rust_val,export_rust_test,export_iron_train,export_iron_val,export_iron_test
+foundation_v1,/home/jamie/Dev/redox/data/pilot/foundation_v1/manifest.v1_candidate.jsonl,220,12,160,30,30,True,,,160,30,30,160,30,30
+foundation_v2,/home/jamie/Dev/redox/data/pilot/foundation_v2/manifest.v2_candidate.jsonl,380,15,320,30,30,,160,result_unwrap_or_train;vec_pop_train;option_unwrap_or_train,320,30,30,320,30,30

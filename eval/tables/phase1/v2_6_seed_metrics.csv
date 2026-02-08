@@ -1,0 +1,5 @@
+seed,arm,report_path,total,transform_pass,transform_rate,compile_pass,compile_at_1,test_pass,test_at_1
+3407,rust,/home/jamie/Dev/redox/eval/v2_6/report_seed3407.json,30,30,1.0,26,0.866667,26,0.866667
+3407,iron,/home/jamie/Dev/redox/eval/v2_6/report_seed3407.json,30,29,0.966667,29,0.966667,29,0.966667
+2108,rust,/home/jamie/Dev/redox/eval/v2_6/report_seed2108.json,30,30,1.0,29,0.966667,29,0.966667
+2108,iron,/home/jamie/Dev/redox/eval/v2_6/report_seed2108.json,30,30,1.0,29,0.966667,29,0.966667
