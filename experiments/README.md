@@ -92,6 +92,7 @@ Optional but recommended:
 
 ## Immediate next actions
 
-1. Add a manifest for the latest `v2_6` run.
-2. Add `docs/EVAL_PROTOCOL.md` before starting the 8B series.
-3. Move notebooks into `notebooks/` in a dedicated cleanup commit.
+1. Done: added manifest for `v2_6` (`experiments/v2_6_iron_eval_prompt_fix.json`).
+2. Done: added canonical protocol doc (`docs/EVAL_PROTOCOL.md`).
+3. Done: moved root notebooks into `notebooks/`.
+4. Next: add a lightweight task runner for common export/eval/report flows.

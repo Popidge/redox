@@ -1,0 +1,50 @@
+{
+  "run_tag": "v2_6_iron_eval_prompt_fix",
+  "date_utc": "2026-02-08",
+  "model_base": "unsloth/Qwen3-4B-Instruct-2507",
+  "arms": [
+    "rust",
+    "iron"
+  ],
+  "seeds": [
+    3407,
+    2108
+  ],
+  "dataset_version": "foundation_v2",
+  "dataset_paths": {
+    "rust": "data/pilot/foundation_v2/unsloth/rust_{train,val,test}.jsonl",
+    "iron": "data/pilot/foundation_v2/unsloth/iron_{train,val,test}.jsonl"
+  },
+  "prompt_contract_version": "iron_eval_contract_fix_v1",
+  "prediction_paths": {
+    "rust": [
+      "eval/v2_6/predictions_rust_seed3407.jsonl",
+      "eval/v2_6/predictions_rust_seed2108.jsonl"
+    ],
+    "iron": [
+      "eval/v2_6/predictions_iron_seed3407.jsonl",
+      "eval/v2_6/predictions_iron_seed2108.jsonl"
+    ]
+  },
+  "report_paths": {
+    "per_seed": [
+      "eval/v2_6/report_seed3407.json",
+      "eval/v2_6/report_seed2108.json"
+    ],
+    "strict_attribution": [
+      "eval/v2_6/report_seed3407_iron_prompt_fix_only.json",
+      "eval/v2_6/report_seed2108_iron_prompt_fix_only.json"
+    ]
+  },
+  "aggregate_report_path": "eval/v2_6/report_aggregate_2seeds.json",
+  "notes": [
+    "This run validates Iron eval prompt contract correction (Iron signatures instead of Rust signatures).",
+    "Strict attribution aggregate: eval/v2_6/report_aggregate_2seeds_iron_prompt_fix_only.json",
+    "Observed remaining Iron failures are closure-family macro/closure lexical confusion on closure_shift_008."
+  ],
+  "runtime": "Colab (generation) + local evaluation",
+  "adapter_locations": {
+    "rust": "Google Drive / Colab artifacts",
+    "iron": "Google Drive / Colab artifacts"
+  }
+}
