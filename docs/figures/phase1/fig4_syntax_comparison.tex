@@ -1,0 +1,29 @@
+% Figure 4: syntax comparison using lstlisting
+% Requires packages: listings, caption
+
+\begin{figure}[t]
+\centering
+\begin{minipage}[t]{0.48\linewidth}
+\captionof{lstlisting}{Rust snippet}
+\begin{lstlisting}[language=Rust,basicstyle=\ttfamily\small]
+pub fn closure_shift_001(x: i32) -> i32 {
+    let f = |n| n + 3;
+    f(x)
+}
+\end{lstlisting}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\captionof{lstlisting}{Iron snippet}
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+function closure_shift_001
+    takes x of i32
+    returns i32
+begin
+    define f as closure with parameters n and body n plus 3
+    call f with x
+end function
+\end{lstlisting}
+\end{minipage}
+\caption{Syntax comparison: Rust vs Iron for the same function contract.}
+\label{fig:syntax_comparison}
+\end{figure}

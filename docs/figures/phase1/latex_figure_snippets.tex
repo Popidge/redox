@@ -1,0 +1,29 @@
+% Figure include snippets for LaTeX
+% Add in preamble: \usepackage{graphicx}, \usepackage{listings}, \usepackage{caption}
+
+% Figure 1: Money Plot
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.82\linewidth]{docs/figures/phase1/fig1_money_plot_v26.pdf}
+  \caption{Final performance comparison (v2.6 aggregate): compile@1 and test@1.}
+  \label{fig:money_plot}
+\end{figure}
+
+% Figure 2: Progression
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.82\linewidth]{docs/figures/phase1/fig2_progression_iron_test.pdf}
+  \caption{Iron test@1 progression across iterations (v1 to v2.6).}
+  \label{fig:progression}
+\end{figure}
+
+% Figure 3: Error Shift
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.82\linewidth]{docs/figures/phase1/fig3_error_shift_v25.pdf}
+  \caption{Failure taxonomy contrast (v2.5 aggregate): Rust semantic failures vs Iron transform failures.}
+  \label{fig:error_shift}
+\end{figure}
+
+% Figure 4 uses a listing-based figure snippet:
+% \input{docs/figures/phase1/fig4_syntax_comparison.tex}
