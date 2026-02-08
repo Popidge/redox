@@ -65,9 +65,10 @@ python3 scripts/aggregate_eval_reports.py --help
 
 ## Research artifacts (TBC links)
 
+- Zenodo upload: [DOI 10.5281/zenodo.18528387](https://doi.org/10.5281/zenodo.18528387)
 - arXiv submission (TBC): <TBC>
 - Transparency post on AI-assisted research workflow (TBC): <TBC>
 
 ## License
 
-TBC
+CC 4.0 BY

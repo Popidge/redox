@@ -542,3 +542,125 @@ High-ROI next steps prioritized:
    - retry/repair flow for invalid Iron outputs before oxidation
 
 This is a strong checkpoint: we now have an executable research loop from transpiler quality gates to model evaluation, with concrete quantitative outputs and clear failure clusters to target.
+
+### Milestone: Protocol Repair, v2.6 Validation, and Paper Artifacts - 2026-02-08
+
+**Status**: Exploratory phase closed with positive evidence; repository now organized for scale-up.
+
+#### 1) Root-cause identified: Iron eval contract mismatch
+
+Issue discovered:
+
+- Iron eval prompts were carrying Rust signatures (`pub fn ...`) instead of Iron signatures.
+- This introduced avoidable noise in Iron generation and suppressed transform reliability.
+
+Fix implemented:
+
+- `scripts/export_unsloth_dataset.py`
+  - `build_user_prompt(...)` now replaces stale contract blocks per language.
+  - `strip_existing_contract(...)` added to remove prior contract sections before reinsertion.
+
+Result:
+
+- `data/pilot/foundation_v2/unsloth/iron_test.jsonl` now consistently uses Iron signatures (`function ... | takes ... | returns ...`).
+
+#### 2) v2.6 evaluation completed (2 seeds)
+
+Artifacts:
+
+- predictions: `eval/v2_6/predictions_{rust,iron}_seed{3407,2108}.jsonl`
+- per-seed reports: `eval/v2_6/report_seed3407.json`, `eval/v2_6/report_seed2108.json`
+- aggregate report: `eval/v2_6/report_aggregate_2seeds.json`
+
+v2.6 aggregate highlights:
+
+- Rust: compile/test `0.917 ± 0.050`
+- Iron: compile/test `0.967 ± 0.000`, transform `0.983 ± 0.017`
+- Iron - Rust delta: `+0.050` compile, `+0.050` test
+
+#### 3) Strict attribution run isolated prompt-fix impact
+
+Method:
+
+- Hold Rust predictions fixed to v2.5.
+- Re-evaluate with newly generated Iron predictions only.
+
+Artifacts:
+
+- `eval/v2_6/report_seed3407_iron_prompt_fix_only.json`
+- `eval/v2_6/report_seed2108_iron_prompt_fix_only.json`
+- `eval/v2_6/report_aggregate_2seeds_iron_prompt_fix_only.json`
+
+Outcome:
+
+- Rust unchanged at `0.717` compile/test
+- Iron improved to `0.967` compile/test and `0.983` transform
+- Iron - Rust delta moved to `+0.250` compile/test
+
+Interpretation:
+
+- The v2.5 Iron regression was substantially protocol-induced, not primarily model collapse.
+
+#### 4) Residual failure mode is narrow and actionable
+
+Remaining Iron misses in v2.6:
+
+- both seeds fail only `closure_shift_008`
+- failure pattern: closure vs macro lexical confusion (`macro closure` / unresolved macro call)
+
+Notable comparison:
+
+- same task in Rust arm generally produces valid closure forms and passes.
+
+#### 5) Repo hygiene and structure upgrades landed
+
+New baseline + organization commits:
+
+- `76a8bcc` - baseline capture + roadmap
+- `167b064` - notebook organization + eval protocol + experiment manifest
+
+Structure/docs added:
+
+- `docs/ROADMAP.md`
+- `docs/EVAL_PROTOCOL.md`
+- `experiments/README.md`
+- `experiments/v2_6_iron_eval_prompt_fix.json`
+- notebooks moved into `notebooks/`
+
+Ignore policy updated:
+
+- `training/`, cache folders, notebook checkpoints excluded from git tracking.
+
+#### 6) Whitepaper artifacts created in-repo
+
+Report and publication support:
+
+- `docs/EXPERIMENTAL_REPORT_PHASE1.md`
+- `docs/rust_iron_and_redox_whitepaper.pdf`
+
+CSV exports for plotting/tables:
+
+- exporter: `scripts/export_phase1_csvs.py`
+- outputs: `eval/tables/phase1/*.csv`
+
+LaTeX-ready figures:
+
+- generator: `scripts/generate_phase1_figures.py`
+- outputs: `docs/figures/phase1/`
+  - money plot (v2.6)
+  - progression plot (v1 -> v2 -> v2.5 -> v2.6)
+  - failure taxonomy stacked bars
+  - side-by-side Rust/Iron lstlisting snippet
+
+#### 7) Project handoff state (short pause, then scale-up)
+
+Current state is checkpointed and reproducible.
+
+When resuming, immediate phase-2 priorities:
+
+1. Expand Iron/Redox language coverage while preserving deterministic round-trip behavior.
+2. Increase real-world corpus validation beyond current synthetic families.
+3. Scale paired datasets and run multi-seed experiments on larger models (8B class).
+4. Keep strict-attribution reruns for any protocol/parser/model change.
+
+This concludes exploratory phase 1 with strong early support for the representation hypothesis and a clean operational base for the next stage.
